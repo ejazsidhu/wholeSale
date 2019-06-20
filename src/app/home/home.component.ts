@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { SharedHttpService } from '../shared/shared-http.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   title = 'wholeSale';
-  constructor(public router:Router, public activatedRoute: ActivatedRoute){
+  constructor(public router:Router, public activatedRoute: ActivatedRoute,private httpService:SharedHttpService){
     this.activatedRoute.queryParams.subscribe(p=>{console.log(p)})
 
     // let str=this.router.url;
