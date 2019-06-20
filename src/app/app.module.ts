@@ -9,10 +9,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import 'hammerjs';
 import { MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatSelectModule, MatNativeDateModule, MatFormFieldModule, MatInputModule, MatDatepickerModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { ShopListComponent } from './shop-list/shop-list.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ShopListComponent
   ],
   imports: [
     BrowserModule,
