@@ -9,12 +9,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import 'hammerjs';
 import { MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatSelectModule, MatNativeDateModule, MatFormFieldModule, MatInputModule, MatDatepickerModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
-import { ShopListComponent } from './shop-list/shop-list.component';
+import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ShopListComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -22,6 +22,7 @@ import { ShopListComponent } from './shop-list/shop-list.component';
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot(),
     MatDatepickerModule,MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatSelectModule, MatNativeDateModule, MatFormFieldModule, MatInputModule
   ],
   providers: [],

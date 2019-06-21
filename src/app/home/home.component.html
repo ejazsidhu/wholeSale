@@ -48,7 +48,7 @@
                         <tbody *ngIf="merchandiserList.length>0">
                             <tr *ngFor="let item of merchandiserList">
                                 <td>{{item.m_code}}</td>
-                                <td style="color:blue;cursor:pointer" [routerLink]="['/shop_list']" [queryParams]="{ surveyorId: item.id,startDate: modifyDate(startDate),endDate: modifyDate(startDate)}">{{item.full_name}}</td>
+                                <td style="color:blue;cursor:pointer" [routerLink]="['/evaluation']" [queryParams]="{ surveyorId: item.id,startDate: modifyDate(startDate),endDate: modifyDate(startDate)}">{{item.full_name}}</td>
 
                             </tr>
                         </tbody>
