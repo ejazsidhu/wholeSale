@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   ip:'http://wholesale.rtdtradetracker.com/',
-  hash:''
+  hash:'/#/'
 };
 
 /*

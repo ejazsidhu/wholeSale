@@ -27,7 +27,7 @@ import { LocationStrategy, HashLocationStrategy } from '@angular/common';
     MatDatepickerModule,MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatSelectModule, MatNativeDateModule, MatFormFieldModule, MatInputModule
   ],
   providers: [ 
-    // { provide: LocationStrategy, useClass: HashLocationStrategy }
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })

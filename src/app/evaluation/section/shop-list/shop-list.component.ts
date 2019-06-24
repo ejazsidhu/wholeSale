@@ -57,12 +57,12 @@ export class ShopListComponent implements OnInit {
   }
 
   gotoNewPage(item){ 
-    let str=`${environment.hash}evaluation/shop_list/details/${item.survey_id}` 
-    if(item.flag!=1)
-    this.router.navigate([str])
+    // let str=`${environment.hash}evaluation/shop_list/details/${item.survey_id}` 
+    // if(item.flag!=1)
+    // this.router.navigate([str])
     // window.open()
-
-    // window.open(`${environment.hash}evaluation/shop_list/details/${item.survey_id}`,'_blank')
+    if(item.flag!=1)
+    window.open(`${environment.hash}evaluation/shop_list/details/${item.survey_id}`,'_blank')
     }
  
 
