@@ -15,15 +15,18 @@ export class HomeComponent implements OnInit {
   startDate:any=new Date();
   endDate=new Date();
   loadingReportMessage=false;
-    merchandiserList: any=[];
+  merchandiserList: any=[];
   userId: any;
    
 
   constructor(public router:Router, public activatedRoute: ActivatedRoute,private httpService:SharedHttpService){
+    localStorage.clear();
     this.activatedRoute.queryParams.subscribe(p=>{
       console.log(p)
       this.userId=p.userId;
       this.getMerchandiserList();
+      localStorage.setItem('userTypeId',p.userTypeId)
+      localStorage.setItem('userId',this.userId)
 
     })
     

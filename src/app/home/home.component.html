@@ -1,4 +1,4 @@
-<ng-container *ngIf="merchandiserList.length>0">
+<ng-container *ngIf="merchandiserList?.length>0">
     <div class="animated slideInLeft">
         <mat-card class="mb-20">
 
@@ -63,7 +63,7 @@
         </mat-card>
     </div>
 </ng-container>
-<div class="row " *ngIf="merchandiserList.length==0">
+<div class="row " *ngIf="merchandiserList?.length==0">
     <div class="col-md-12 text-center">
         <div class="img-center">
             <img src="assets/images/basicloader.gif" alt="" srcset="">

@@ -52,7 +52,7 @@ export class SectionHomeComponent implements OnInit {
 
       let obj = {
         surveyId: this.surveyId,
-        userTypeId: localStorage.getItem('user_type')
+        userTypeId: localStorage.getItem('userTypeId')
       }
 
       this.getData(obj)
@@ -203,7 +203,7 @@ export class SectionHomeComponent implements OnInit {
     let obj={
       criteriaId:this.selectedCriteria,
       surveyId:this.surveyId,
-      evaluatorId:localStorage.getItem('user_id')
+      evaluatorId:localStorage.getItem('userId')
     }
     console.log('selected criteria',obj);
     this.httpService.evaluateShop(obj).subscribe((data:any)=>{
