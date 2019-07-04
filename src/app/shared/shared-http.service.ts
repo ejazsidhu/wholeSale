@@ -6,8 +6,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class SharedHttpService {
-  ip=environment.ip;
-  // ip="http://192.168.3.189:8080/audit/";
+  // ip=environment.ip;
+  ip="http://192.168.3.94:8080/audit/";
 
   constructor(private http:HttpClient) { }
   httpOptions = {
